@@ -209,22 +209,22 @@ export default function Home() {
       </div>
 
       <nav className="nav">
-        <div className="container navin">
-          <div className="navlinks">
-            <a href="#about">About</a>
-            <a href="#events">Events</a>
-            <a href="#register">Registration</a>
-            <a className="btn" href="#register">Register Now ↗</a>
-          </div>
-
+        <div
+          className="container navin"
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            gap: "24px"
+          }}
+        >
+          {/* INNOVATE 2027 LOGO - LEFT SIDE */}
           <a
             href="#top"
-            className="brand"
             aria-label="INNOVATE 2027 home"
             style={{
               display: "flex",
               alignItems: "center",
-              marginLeft: "auto",
               flexShrink: 0
             }}
           >
@@ -233,13 +233,30 @@ export default function Home() {
               alt="INNOVATE 2027 - A Platform for Young Innovators"
               style={{
                 display: "block",
-                width: "190px",
-                maxWidth: "100%",
+                width: "220px",
+                maxWidth: "38vw",
                 height: "auto",
                 objectFit: "contain"
               }}
             />
           </a>
+
+          {/* NAVIGATION LINKS - RIGHT SIDE */}
+          <div
+            className="navlinks"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "flex-end",
+              gap: "24px",
+              flexWrap: "wrap"
+            }}
+          >
+            <a href="#about">About</a>
+            <a href="#events">Events</a>
+            <a href="#register">Registration</a>
+            <a className="btn" href="#register">Register Now ↗</a>
+          </div>
         </div>
       </nav>
 
